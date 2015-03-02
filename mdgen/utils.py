@@ -26,7 +26,7 @@ def discover_targets(files, source, target):
 
 		# append .html to the base file name
 		target_file = os.path.join(target, path + '.html')
-		results.append({source_file, target_file})
+		results.append([source_file, target_file])
 
 	return results
 
